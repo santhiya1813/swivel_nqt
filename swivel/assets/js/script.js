@@ -26,7 +26,7 @@ function loginRedirect(event) {
     const password = document.getElementById("loginPassword").value;
 
     // STATIC TRAINER LOGIN
-    if (email === "trainer@gmail.com" && password === "trainer") {
+    if (email === "trainer@gmail.com" && password === "trainer@123") {
         localStorage.setItem("userRole", "1"); // Trainer
         localStorage.setItem("userEmail", email);
         window.location.href = "dashboard.html";
@@ -92,3 +92,4 @@ function hidePasswordBeforeSubmit() {
         pwd.type = "password"; // force hide before submit
     }
 }
+
